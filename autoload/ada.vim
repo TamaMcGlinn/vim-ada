@@ -482,6 +482,7 @@ endfunction ada#Switch_Syntax_Option
 " Args:	    Additional parameter.
 "
 function ada#Map_Menu (Text, Keys, Command, Function, Args)
+   return
    let l:menutext = escape(a:Text, ' ')
 
    if exists('g:mapleader') && !exists("no_plugin_maps") && !exists("no_ada_maps")
